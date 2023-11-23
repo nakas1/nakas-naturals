@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition | Nakas Naturals</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <script src="js/bootstrap.min.js"></script>
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="wellness.html">Wellness</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+    </nav>
+    <header>
+        <h1>Nutrition</h1>
+    </header>
+    <main>
+        <section class="nutrition-intro">
+            <h2>Explore the World of Nutrition</h2>
+            <p>At Nakas Naturals, we believe that the type of food you eat determines how your body system functions, therefore proper nutrition is the cornerstone of a healthy life. Discover valuable insights about nutrition and how it can benefit your well-being.</p>
+        </section>
+
+        <section class="nutrition-tips">
+            <h3>Top Nutrition Tips</h3>
+            <p>1. Eat a variety of fruits and vegetables to ensure a wide range of nutrients in your diet.</p>
+            <p>2. Stay hydrated by drinking plenty of water throughout the day.</p>
+            <p>3. Limit processed foods high in sugar, salt, and unhealthy fats.</p>
+            <p>4. Include lean proteins like chicken, fish, and legumes in your meals.</p>
+            <p>5. Consume whole grains for sustained energy and fiber.</p>
+        </section>
+
+        <section class="nutrition-benefits">
+            <h3>The Benefits of Good Nutrition</h3>
+            <p>Good nutrition offers numerous advantages:</p>
+            <ul>
+                <li>Improved energy levels and productivity</li>
+                <li>Healthy weight management</li>
+                <li>Stronger immune system</li>
+                <li>Better digestion</li>
+                <li>Reduced risk of chronic diseases</li>
+            </ul>
+        </section>
+
+        <section class="nutrition-resources">
+            <h3>Nutrition Resources</h3>
+            <p>Explore our recommended nutrition resources to enhance your dietary knowledge:</p>
+            <ul>
+                <li><a href="#">Nutrition Guides</a></li>
+                <li><a href="#">Healthy Recipes</a></li>
+                <li><a href="#">Meal Planning Tips</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

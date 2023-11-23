@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Nakas Naturals</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <script src="js/bootstrap.min.js"></script>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section class="about-us">
+            <h2>About Nakas Naturals</h2>
+            <p>At Nakas Naturals, we are dedicated to promoting natural health and wellness worldwide. We firmly believe that the key to a healthy lifestyle is through natural remedies and preventative care.</p>
+            <p>Our team of experts is passionately committed to providing our customers with the highest quality natural products and resources to help them achieve their health goals. We are devoted to educating and empowering our customers to make informed decisions about their health and well-being.</p>
+            <p>Our mission is to provide you with quality and firsthand natural health information and wellness resources, enabling

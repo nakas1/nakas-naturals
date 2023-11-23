@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness | Nakas Naturals</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <script src="js/bootstrap.min.js"></script>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="wellness.html">Wellness</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+    </nav>
+    <header>
+        <h1>Wellness</h1>
+    </header>
+    <main>
+    <section class="wellness-intro">
+        <h2>Welcome to Our Wellness World</h2>
+        <p>At Nakas Naturals, we believe in promoting holistic wellness for a healthier and happier life. Explore our wellness tips and resources to enhance your well-being.</p>
+    </section>
+
+    <section class="wellness-articles">
+        <article>
+            <h3>10 Tips for a Balanced Diet</h3>
+            <p>Eating a balanced diet is essential for overall wellness. Learn about the key principles of nutrition and how to make healthier food choices.</p>
+        </article>
+
+        <article>
+            <h3>The Importance of Regular Exercise</h3>
+            <p>Discover the benefits of regular physical activity and find inspiration to incorporate exercise into your daily routine.</p>
+        </article>
+
+        <article>
+            <h3>Stress Management Techniques</h3>
+            <p>High stress levels can negatively impact your health. Explore effective stress management techniques to bring more calm into your life.</p>
+        </article>
+    </section>
+
+    <section class="wellness-resources">
+        <h2>Wellness Resources</h2>
+        <p>Explore our recommended wellness supplements, products, and resources, including books, articles, and videos, to help you on your journey to better health.</p>
+        <ul>
+            <li><a href="#">Recommended Reading List</a></li>
+            <li><a href="#">Wellness Videos</a></li>
+            <li><a href="#">Healthy Recipes</a></li>
+        </ul>
+    </section>
+</main>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

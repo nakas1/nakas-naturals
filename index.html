@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakas Naturals</title>
+    <!-- Corrected the "Link" element to "link" -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nakas Naturals</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Main content here -->
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+    <section class="image-slider">
+        <div class="slider">
+            <!-- Images go here -->
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <!-- Add more images as needed -->
+        </div>
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
+    </section>
+    <script src="script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

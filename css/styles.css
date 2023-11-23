@@ -1,0 +1,47 @@
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Your existing styles for header content */
+
+/* Horizontal menu styles */
+.horizontal-menu {
+    background-color: #333;
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.horizontal-menu ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+.horizontal-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.horizontal-menu ul li a:hover {
+    color: #FF5722; /* Change color on hover */
+}
+/* Default styles for all screen sizes */
+/* ... */
+
+/* Tablet-sized screens (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Styles for tablets */
+    /* ... */
+}
+
+/* Mobile-sized screens (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Styles for mobile devices */
+    /* ... */
+}
